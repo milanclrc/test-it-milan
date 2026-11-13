@@ -1,4 +1,5 @@
 # Test It - Prêt de livres
+# Milan CLERC
 
 API REST Spring Boot (Java 25) de prêt de livres pour une bibliothèque.
 **Le code est fourni : votre travail est d'écrire les tests, ce sont eux qui vous diront si tout va bien.**
@@ -79,3 +80,9 @@ Dans l'ordre que vous voulez, un test par idée :
 - Un test = un comportement. Structure *Given / When / Then*.
 - Un test que vous n'avez jamais vu échouer ne prouve rien : cassez volontairement le service pour vérifier qu'il devient rouge.
 - Ne testez pas vos mocks : testez une décision du code (un `if`, un calcul, un appel ou un non-appel).
+
+## Erreurs notées
+
+### Test Unitaire - BookService
+- borrowBook renvoie un Null
+- borrowBook ne sendMail pas le membre qui vient d'emprunter un livre
