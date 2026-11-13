@@ -86,3 +86,8 @@ Dans l'ordre que vous voulez, un test par idée :
 ### Test Unitaire - BookService
 - borrowBook renvoie un Null
 - borrowBook ne sendMail pas le membre qui vient d'emprunter un livre
+
+### Test d'intégration - BookRepository
+- dans la création de la base de données 001-create-members-table.xml, le nom de la colonne user n'est pas cohérent dans la variable username de la classe member (corrigé)
+- problème de type pour la colonne referent_id bigint attendu (corrigé)
+- missing sequence [book_seq] (pas compris)
