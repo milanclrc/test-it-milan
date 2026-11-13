@@ -68,6 +68,8 @@ public class BookServiceTest {
         assertThat(livreEmprunte.getBorrower()).isEqualTo(member);
 
         verify(bookRepository, times(1)).save(book);
+        verify(mailService, times(1)).sendMail(member, "Livre Emprunté", "Vous avez emprunté le livre " + book.getTitle());
+
     }
 
 }
